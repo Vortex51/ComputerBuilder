@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	  fx:controller="controller.AddToCatalogueController"
+	  alignment="TOP_CENTER"
+	  spacing="10" prefWidth="300">
+
+	<stylesheets>
+		<URL value="@computerbuilder.css" />
+	</stylesheets>
+	<GridPane hgap="10" vgap="10" alignment="TOP_CENTER">
+		<Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+		<TextField fx:id="typeTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+		<Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+		<TextField fx:id="nameTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+		<Label text="Price:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+		<TextField fx:id="priceTf" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+	</GridPane>
+	<Button text="Add to Catalogue" onAction="#handleAdd"/>
+</VBox>
+
